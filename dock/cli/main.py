@@ -3,7 +3,8 @@ import argparse
 import logging
 
 from dock.api import *
-from dock import CONTAINER_BUILD_JSON_PATH, CONTAINER_RESULTS_JSON_PATH, set_logging
+from dock import set_logging
+from dock.constants import CONTAINER_BUILD_JSON_PATH, CONTAINER_RESULTS_JSON_PATH
 from dock.buildimage import BuildImageBuilder
 from dock.inner import BuildResultsEncoder, build_inside
 
